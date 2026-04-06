@@ -1,5 +1,7 @@
 # 💰 Finance Dashboard UI
 
+## 📸 Preview
+
 <img width="588" height="691" alt="image" src="https://github.com/user-attachments/assets/99e1497b-666c-4fc0-8cdd-42db93831dff" />
 
 
