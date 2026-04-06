@@ -4,36 +4,36 @@
 
 This project is a simple Finance Dashboard UI built as part of an assignment.
 
-The idea was to create a clean and easy-to-understand interface where users can:
+The goal was to create a clean and easy-to-understand interface where users can:
 
-* quickly see their financial summary
+* quickly view their financial summary
 * explore their transactions
 * understand spending patterns
 
-I focused more on **clarity and usability** rather than making the UI overly complex.
+I focused more on clarity and usability rather than making the UI overly complex.
 
 ---
 
-## 🧠 How I Approached This
+## 🧠 Approach
 
-Before starting, I tried to think like a user:
+Before starting, I tried to think from a user’s perspective:
 
-> *“If I open a finance dashboard, what do I want to see first?”*
+**“If I open a finance dashboard, what would I want to see first?”**
 
-My answer was:
+The answer was:
 
-1. My total balance
-2. How much I earned and spent
-3. Where my money is going
-4. A way to explore all transactions
+* Total balance
+* Income vs expenses
+* Where the money is going
+* A way to explore transactions
 
-Based on that, I structured the dashboard.
+Based on this, I structured the dashboard accordingly.
 
 ---
 
-## 🏗️ Structure of the Dashboard
+## 🏗️ Layout Structure
 
-I designed the layout in a simple flow:
+The dashboard follows a simple top-to-bottom flow:
 
 * **Top → Summary Cards**
   Shows total balance, income, and expenses
@@ -45,26 +45,26 @@ I designed the layout in a simple flow:
   * over time
 
 * **Below → Transactions Table**
-  Lets users search and filter their data
+  Allows searching and filtering
 
 * **Bottom → Insights**
-  Gives quick observations from the data
+  Displays quick observations from the data
 
-This way, the user can go from **overview → details → insights** easily.
+This flow helps users move from overview → details → insights smoothly.
 
 ---
 
 ## 🧩 Components
 
-To keep things organized, I split the UI into components:
+To keep the code organized, I split the UI into reusable components:
 
-* `SummaryCards` → shows balance, income, expenses
+* `SummaryCards` → balance, income, expenses
 * `CategoryChart` → spending breakdown
-* `LineChart` → trend over time
-* `Transactions` → table with search and filters
-* `Insights` → simple derived information
+* `LineChart` → spending trend
+* `Transactions` → table with search & filters
+* `Insights` → derived information
 
-This made the code easier to manage and understand.
+This made the code easier to maintain and scale.
 
 ---
 
@@ -76,39 +76,39 @@ I used simple React state (`useState`) for:
 * search input
 * role switching (viewer/admin)
 
-Since the app is small, I kept it simple instead of using complex state libraries.
+Since the application is small, I avoided adding unnecessary complexity.
 
 ---
 
 ## 👤 Role-Based UI
 
-I added a basic role system:
+I implemented a basic role system:
 
 * **Viewer** → can only view data
-* **Admin** → sees an option to add transactions
+* **Admin** → can add transactions
 
-This is just simulated on the frontend to show how UI can change based on roles.
+This is simulated on the frontend to demonstrate role-based UI behavior.
 
 ---
 
 ## 📊 Data & Logic
 
-* Used mock data for transactions
+* Used mock transaction data
 * Calculated totals using `filter` and `reduce`
-* Generated insights (like highest spending category) from the same data
+* Generated insights (e.g., highest spending category)
 
 ---
 
 ## 🎨 Design Choices
 
-I didn’t try to over-design the UI. Instead, I focused on:
+Instead of over-designing, I focused on:
 
 * clean layout
 * consistent spacing
-* readable text
+* readable typography
 * simple color usage
 
-The goal was to make the dashboard feel **clear and usable**, not complicated.
+The goal was to keep the dashboard clear and user-friendly.
 
 ---
 
@@ -123,10 +123,10 @@ The goal was to make the dashboard feel **clear and usable**, not complicated.
 ## 🚀 Features
 
 * Financial summary (balance, income, expenses)
-* Spending visualization (category + timeline)
-* Transaction list with search and filters
-* Role-based UI (viewer/admin)
-* Basic insights from data
+* Spending visualization (category & timeline)
+* Transactions table with search & filters
+* Role-based UI
+* Basic insights
 * Responsive layout
 
 ---
@@ -140,15 +140,15 @@ npm run dev
 
 ---
 
-## 🔮 If I Had More Time
+## 🔮 Future Improvements
 
-I would:
+If given more time, I would:
 
 * connect to a real backend
 * allow adding/editing transactions
-* improve charts with more interactions
+* enhance chart interactivity
 * add authentication
-* add dark mode
+* implement dark mode
 
 ---
 
@@ -156,8 +156,12 @@ I would:
 
 This project helped me focus on:
 
-* how to structure a UI
-* how to present data clearly
+* structuring a UI properly
+* presenting data clearly
+* keeping things simple but effective
+
+I aimed to balance functionality and clarity without overcomplicating the implementation.
+
 * how to keep things simple but useful
 
 I tried to balance **functionality + clarity**, rather than making it overly complex.
